@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="Start Template" />
+    <meta name="author" content="Admin" />
+    <title>Calculator</title>
+
+    <link rel="icon" href="images/favicon.png" />
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css" />
+    <link rel="stylesheet" href="css/styles.min.css" />
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <h1 class="title">My Calculator</h1>
+    <div class="calc">
+      <div class="calc__input inputVal">
+        <textarea class="calc__input-field" value=""></textarea>
+      </div>
+      <div>
+        <button value="7" id="7">7</button>
+        <button value="8" id="8">8</button>
+        <button value="9" id="9">9</button>
+        <button value="" id="backspace">&#x2190</button>
+        <button value="" id="clear" >C</button>
+      </div>
+      <div>
+        <button value="4" id="4">4</button>
+        <button value="5" id="5">5</button>
+        <button value="6" id="6">6</button>
+        <button value="+" id="plus">+</button>
+        <button value="-" id="minus">-</button>
+      </div>
+      <div>
+        <button value="1" id="1">1</button>
+        <button value="2" id="2">2</button>
+        <button value="3" id="3">3</button>
+        <button value="*" id="multiply">x</button>
+        <button value="/" id="divide">/</button>
+      </div>
+      <div>
+        <button value="." id="dot">.</button>
+        <button value="0" id="0" class="wide-btn">0</button>
+        <button value="=" id="equal" class="wide-btn">=</button>
+      </div>
+    </div>
+
+    <script src="js/libs/jquery-3.5.1.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
