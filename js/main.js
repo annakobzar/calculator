@@ -14,17 +14,18 @@
       $('#equal').click(function(){
         result.val(eval(result.val()));
 
+        if (!isFinite(result.val())) {
+                alert('You hacked this world!');
+                } 
+        });
+
+// "=" по enter
         $('.calc__input-field').keydown(function(e){
                 if (e.which == 13) {
                         e.preventDefault();
                         result.val(eval(result.val()));
-                        } 
+                        }; 
                 });
-        
-        if (!isFinite(result.val())) {
-                alert('You hacked this world!');
-                }
-        });
 
 // очистить поле ввода
       $('#clear').click(function(){
